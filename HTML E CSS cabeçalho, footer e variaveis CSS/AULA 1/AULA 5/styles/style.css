@@ -4,7 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-
+:root {
+  --cor-primaria: #2c3639;
+  --cor-secundaria: #dcd7c9;
+  --cor-terciaria: #a27b5c;
+  --cor-hover: #3f4e4f;
+  
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria:'Montserrat', sans-serif;
+}
 
 * {
   margin: 0;
@@ -14,8 +22,8 @@
 body {
   box-sizing: border-box;
   /* height: 100vh; */
-  background-color: #000000;
-  color: #F6F6F6;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
   text-align: justify;
 }
 
@@ -29,16 +37,16 @@ body {
 }
 
 .cabecalho_menu_link {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 18px;
   font-weight: 600;
-  color: #22D4FD;
+  color: var(--cor-terciaria);
   text-decoration: none;
 }
 
 
 header:hover {
-  color: #8be3f7;
+  color: var(--cor-terciaria);
 }
 
 
@@ -57,18 +65,18 @@ header:hover {
 }
 
 .destaque-titulo {
-  color: #22D4FD;
+  color: var(--cor-terciaria);
 }
 
 
 .apresentacao__conteudo__titulo {
   font-size: 26px;
-  font-family: "Krona One", sans-serif;
+  font-family: var(--fonte-primaria);
 }
 
 .explicativo {
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links {
@@ -80,13 +88,13 @@ header:hover {
 }
 
 .apresentacao__links_subtitulo {
-  font-family: 'Krona One', sans-serif;
+  font-family: var(--fonte-primaria);
   font-weight: 400;
   font-size: 16px;
 }
 
 .apresentacao__links__link {
-  border: 2px solid #22D4FD;
+  border: 2px solid var(--cor-terciaria);
   display: flex;
   gap: 8px;
   align-items: center;
@@ -97,15 +105,15 @@ header:hover {
   font-size: 14px;
   padding: 11.5px 0;
   text-decoration: none;
-  color: #F6F6F6;
-  font-family: "Montserrat", sans-serif;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
   font-weight: 600;
 }
 
 .apresentacao__links__link:hover {
-  background-color: #272727;
+  background-color: var(--cor-hover);
    padding: 1rem;
-   border: 2px solid #0000FF;
+   border: 2px solid #9e6638;
    cursor: pointer;
 }
 
@@ -120,10 +128,10 @@ header:hover {
 
 .direitos {
   text-align: center;
-  background-color: #22D4FD;
-  color: #000000;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
   padding: 18px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 18px;
   font-weight: 400;
 }
